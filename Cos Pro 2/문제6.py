@@ -20,3 +20,6 @@ number=40
 ret=solution(number)
 
 print("solution: return value of the fuction is ",ret,".")
+
+
+

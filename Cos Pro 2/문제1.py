@@ -24,3 +24,7 @@ ret=solution(shirt_size) #함수 불러내기
 
 print("solution:return value of the function is",ret,".")
 
+
+
+
+
