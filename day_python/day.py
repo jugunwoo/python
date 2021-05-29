@@ -16,12 +16,16 @@ soup=bs(html.read(),'html.parser')#3. read(): 인터넷을 읽어오기
 print(soup.find_all('span')[0].text)#4.읽어온파일중 찾기('span') 찾아서 첫번째 텍스트 가져오기
 #  마크업언어[html] 에서 <span> 태그를 찾아서 태그 사이에 있는 텍스트 가져오기
 
+#find.all(): 찾는값 모두 가져오기
 print(soup.find_all('span')[2].text)
 
+#find.all(): 찾는값 모두 가져오기
 print(soup.find_all('span')[4].text)
 
+#모든 span 출력
 for i in soup.find_all('span'):
     print(i.text)
 
+#div 태그 포함된 해당 클래스만 찾기
 for i in soup.find_all('div',{"class":"quote"}):
     print(i.text)
