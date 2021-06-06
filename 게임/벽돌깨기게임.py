@@ -74,8 +74,11 @@ while True:
 
     if 게임종료==1:
         글꼴1=pygame.font.SysFont("malgungothic",32)
-        점수메세지=글꼴1.render("게임종료"+str(점수),True,(0,255,0))
+        글꼴2 = pygame.font.SysFont("malgungothic", 32)
+        점수메세지=글꼴1.render("POINT:"+str(점수),True,(0,255,0))
+        종료메세지=글꼴2.render("GAME OVER",True,(0,255,0))
         화면.blit(점수메세지,(165,300))
+        화면.blit(종료메세지,(165,350))
     pygame.display.update()
     시간.tick(30)
 
